@@ -1,0 +1,59 @@
+.process {
+  display: grid;
+  grid-column: 1 / -1;
+  color: $color-text;
+  margin-top: 120px;
+
+  &__main {
+    &-note {
+      color: $color-note;
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 13px;
+      line-height: 19.5px;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 41.6px;
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    &-paragraph {
+      font-family: 'Open Sans', sans-serif;
+      color: $color-secondary;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+      margin-top: 24px;
+    }
+  }
+
+  &__item {
+    background-color: $color-white;
+    border-radius: 16px;
+    height: 264px;
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 48px !important;
+    }
+  }
+
+  &__number {
+    background-color: rgba(32, 96, 246, 0.1);
+    text-align: center;
+    color: $color-blue;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    border-radius: 23px;
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+}

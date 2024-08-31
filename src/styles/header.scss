@@ -1,0 +1,47 @@
+.header {
+  background-color: $color-background-header;
+
+  &__content {
+    @include responsive-grid;
+
+    @include responsive-padding(
+      $padding-default,
+      $padding-tablet,
+      $padding-small-desktop,
+      $padding-screen-design,
+      $padding-largest
+    );
+
+    font-family: "Poppins", sans-serif;
+    margin-top: 48px;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 62.4px;
+
+    @media (min-width: $screen-tablet) {
+      font-size: 64px;
+    }
+  }
+
+  &__paragraph {
+    font-family: "Open Sans", sans-serif;
+    grid-column: 1 / -1;
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__button {
+    background-color: rgba(32, 96, 246, 1);
+    color: $color-white;
+    height: 50px;
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    margin-top: 72px;
+  }
+}
