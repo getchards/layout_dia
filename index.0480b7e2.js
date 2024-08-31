@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".slider__button--prev"),t=document.querySelector(".slider__button--next"),n=document.querySelector(".slider__container"),r=document.querySelectorAll(".slider__image"),o=0;function c(){let e=-(100*o);n.style.transform=`translateX(${e}%)`}e.addEventListener("click",function(){o=o>0?o-1:r.length-1,c()}),t.addEventListener("click",function(){o=o<r.length-1?o+1:0,c()})});
+//# sourceMappingURL=index.0480b7e2.js.map
